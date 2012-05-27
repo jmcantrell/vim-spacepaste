@@ -1,7 +1,7 @@
 " Filename:      spacepaste.vim
 " Description:   Vim interface to spacepaste-based pastebins
 " Maintainer:    Jeremy Cantrell <jmcantrell@gmail.com>
-" Last Modified: Sun 2012-05-27 15:58:30 (-0400)
+" Last Modified: Sun 2012-05-27 16:01:35 (-0400)
 
 " Most of this was taken from the lodgeit.vim plugin
 
@@ -108,7 +108,7 @@ else:
     if vim.eval('exists("b:spacepaste_language")') == '1':
         language = vim.eval('b:spacepaste_language')
     else:
-        ft = vim.eval('&ft').split('.')[0] || 'text'
+        ft = vim.eval('&ft').split('.')[0] or 'text'
         language = language_mapping.get(ft, ft)
 
     paste_id = new_paste(language, code, parent)
