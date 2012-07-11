@@ -1,7 +1,7 @@
 " Filename:      spacepaste.vim
 " Description:   Vim interface to spacepaste-based pastebins
 " Maintainer:    Jeremy Cantrell <jmcantrell@gmail.com>
-" Last Modified: Sun 2012-05-27 16:01:35 (-0400)
+" Last Modified: Tue 2012-07-10 20:09:51 (-0400)
 
 " Most of this was taken from the lodgeit.vim plugin
 
@@ -33,16 +33,18 @@ new_paste = srv.pastes.newPaste
 get_paste = srv.pastes.getPaste
 
 language_mapping = {
-    'php':              'html+php',
     'cs':               'csharp',
-    'xhtml':            'html',
     'htmldjango':       'html+django',
     'django':           'html+django',
     'htmljinja':        'html+django',
     'jinja':            'html+django',
-    'mako':             'html+mako',
+    'htmlgenshi':       'html+genshi',
+    'genshi':           'genshi',
+    'htmlmako':         'html+mako',
+    'mako':             'mako',
     'javascript':       'js',
-    'genshi':           'html+genshi'
+    'php':              'html+php',
+    'xhtml':            'html'
 }
 
 language_reverse_mapping = {}
