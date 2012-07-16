@@ -1,0 +1,36 @@
+*spacepaste.txt*  Interface to spacepaste-based pastebins
+
+Author:  Jeremy Cantrell <jmcantrell@gmail.com>       *spacepaste-author*
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                          *spacepaste* *spacepaste.vim*
+
+The spacepaste plugin allows a buffer or range of lines to be pasted to
+a spacepaste-capable pastebin. The default is http://bpaste.net.
+
+COMMANDS                                              *spacepaste-commands*
+
+:Spacepaste [args]                                    *:Spacepaste*
+    Paste the buffer to the spacepaste server. If an argument is provided, it
+    is treated as a paste identifier, or a url to an existing paste.
+
+:[range]Spacepaste
+    Paste the selected range to the spacepaste server.
+
+CONFIGURATION                                         *spacepaste-configuration*
+
+g:spacepaste_loaded                                   *g:spacepaste_loaded*
+    If set in your |vimrc|, spacepaste.vim is not loaded.
+
+g:spacepaste_url                                      *g:spacepaste_url*
+    The base url for the spacepaste service.
+
+b:spacepaste_paste_id                                 *b:spacepaste_paste_id*
+    This will be set to the paste identifier when editing an existing paste or
+    after a new paste has been submitted.
+
+b:spacepaste_language                                 *b:spacepaste_language*
+    If this is set, it will be used as the language on the spacepaste server.
+    Otherwise, it will be guessed based on the current |'filetype'| setting.
+
+vim:tw=78:et:ft=help:norl:

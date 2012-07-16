@@ -1,7 +1,7 @@
 " Filename:      spacepaste.vim
 " Description:   Vim interface to spacepaste-based pastebins
 " Maintainer:    Jeremy Cantrell <jmcantrell@gmail.com>
-" Last Modified: Tue 2012-07-10 20:09:51 (-0400)
+" Last Modified: Sun 2012-07-15 23:14:13 (-0400)
 
 " Most of this was taken from the lodgeit.vim plugin
 
